@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bakery</title>
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'bootstrap/css/bootstrap.min.css') }} "/>
+    
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'fonts/fontawesome-all.min.css') }}" >
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'fonts/font-awesome.min.css') }} ">
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'fonts/fontawesome5-overrides.min.css') }} ">
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'css/Pretty-Footer.css') }} ">
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'css/styles.css') }} ">
+    <link rel="stylesheet" href=" {{ url_for('static',filename = 'css/untitled.css') }} ">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+
+</head>
+
+    
+    
+
+<body>
+    <!-- Navbar Will Come Here -->
+    {% include "layouts/navbar.html" %}
+
+    <!-- Start -->
+        {% block content %}
+
+        {% endblock %}
+    <!-- End -->
+
+    <!-- Footer Comes Here -->
+    {% include "layouts/footer.html" %}
+
+    <script src="{{ url_for('static', filename =  'js/jquery.min.js') }} ">
+    </script>
+    <script src="{{ url_for('static', filename =  'bootstrap/js/bootstrap.min.js') }} ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
